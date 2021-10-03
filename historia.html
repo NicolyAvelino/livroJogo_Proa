@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURVIVE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 
+            Hoje o dia é de contar histórias.         
+            Histórias são caminhos para capturar pessoas.         
+            Histórias fazem pessoas se interessarem.                 
+            Histórias não nos ensinam que monstros existem.         
+            Histórias nos ensinam que monstros podem ser derrotados.               
+
+            Os livros jogos foram uma grande diversão para muitos, principalmente na infância.         
+            Hoje, nós vamos construir um livro jogo.         
+            Essa história não pode ser linear.       
+
+            A cada página construída, o leitor tem de ter pelo menos duas opções de caminho para seguir.         
+            A cada nova opção, o usuário verá novos parágrafos, imagens, vídeos ou qualquer coisa que você possa criar utilizando as tecnologias web.         
+
+            O começo da história é um robô acordando sozinho em uma cidade deserta com pouca bateria.         
+            No começo da história pergunte o nome do personagem principal. Utilize o nome do personagem em outros pontos da história.                 
+
+            Em algum ponto da história, o personagem principal encontrará ao menos um personagem humano.        
+            Em algum ponto da história, o personagem principal encontrará e interagirá com ao menos um outro robô.        
+            Em algum ponto da história, o personagem principal encontrará um gato.         
+            Também necessário que o personagem principal tenha que consertar algumas de suas peças em algum (ou em todos) os caminhos.                 
+
+            A história tem de ter pelo menos 4 finais diferentes.         
+            Em um dos finais o personagem principal estará em outra cidade.         
+            Vocês não podem criar outros arquivos em html, mas podem alterar todos os códigos que foram dados como exemplo.        
+            A página tem de ser estilizada, e utilizando javascript, crie um botão para alternar entre o modo "noturno" ou não.                 
+            A página tem de ser responsiva.         
+            Não há um limite máximo de capítulos nesta história, mas há um limite mínimo: 20 capítulos. 
+
+        -->
+    <section id="pagePrincipal">
+        <div class="contents">
+            <div class="capa">
+                <div class="text">
+                    <h1>SURVIVE</h1>
+                    <p>Está pronto para começar!</p>
+                    <div class="buttons">
+                        <a href="#comeco">
+                            <button>Sim</button>
+                        </a>
+                        <a href="#comeco">
+                            <button>Óbvio</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <input type="checkbox" id="darkmode">
+    <main>
+        <section id="comeco">
+            <div class='container'>
+                <div class="imagem">
+                    <img id="tamanho-img" src="img/sobrevivencia.jpg">
+                </div>
+                <div class="texto">
+                    <h2>O começo</h2>
+                    <p>Depois do que seria considerado o fim do mundo, após uma bomba nuclear explodir sobre a antiga
+                        civilização humana, sobreviver era o novo lema da humanidade, ou o que restou dela. A maioria
+                        das pessoas morreram por conta da radiação, os humanos que restaram estavam presos em bunkes,
+                        racionalizando comida, com medo de voltar a superfície. O mundo pré apocalíptico também abrigava
+                        robôs. Após a explosão a maioria deles foi destruída. Porém em um galpão no final de uma rua
+                        escura com marcas claras de destruição ao longo dela, onde só se ouvia o barulho do vento,
+                        arrastando as sujeiras ali presentes, um I.A (Inteligência Artificial) desperta. O nome dele
+                        você decide. Como gostaria de chamá-lo? </p>
+                    <div class="caixa-buttons">
+                        <a href="#page-1">
+                            <button>Tron</button>
+                        </a>
+                        <a href="#page-2">
+                            <button>Havel</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="lab">
+                    <label for="darkmode" class="darkmodelabel">Dark Mode</label>
+                </div>
+            </div>
+        </section>
+        <section id="page-1">
+            <div class='caixa'>
+                <div class="caixa-img">
+                    <img id="tamanho-img" src="img/galpao.jpg">
+                </div>
+                <div class="paragrafo">
+                    <p>Tron é diferente dos outros robôs, ele nunca fora ligado. Seu inventor, terminou o projeto um
+                        pouco antes da destruição global, mas nunca teve a chance de testá-lo. Tron olha em volta,
+                        fazendo um reconhecimento do local em que está. Ao acabar sua checagem observa que está com
+                        pouca bateria. Ele olha em volta procurando a saída para ir em busca de uma fonte de energia. O
+                        galpão é enorme, o vento sopra forte, está escuro e silencioso. Tron começa a caminhar pelo
+                        local. Na metade do caminho ele ouve um barulho, algo metálico caiu ao chão. Tron vira
+                        imediatamente na direção do barulho. O que fazer?</p>
+                    <div class="caixa-buttons">
+                        <a href="#page-1.1">
+                            <button>Vai atrás do barulho</button>
+                        </a>
+                        <a href="#page-1.2">
+                            <button>Procurar fonte de energia</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="lab">
+                    <label for="darkmode" class="darkmodelabel">Dark Mode</label>
+                </div>
+            </div>
+        </section>
+        <section id="page-1.1">
+            <div class='container'>
+                <div class="imagem">
+                    <img id="tamanho-img" src="img/gato.jpg">
+                </div>
+                <div id="separar" class="texto">
+                    <p>Tron caminha em direção ao barulho. Ele olha em volta, e encontra um gato. Se aproxima lentamente
+                        do gatinho, estende sua mão e acaricia o bichano peludo e macio. “Oi, amiguinho, está perdido
+                        por aqui?” O gato ronrona em resposta a ele, se aproveitando do carinho. Passando a mão pelo
+                        gatinho ele observa em sua coleira um nome. “Então seu nome é Atlas amiguinho. Pode me chamar de
+                        Tron. Estou com pouca bateria Atlas. Quer me acompanhar e me ajudar a encontrar energia?” O
+                        gatinho se levanta rapidamente e corre em direção ao fundo do galpão. “Atlas?” O que fazer?</p>
+                    <div class="caixa-buttons">
+                        <a href="#page-1.1.1">
+                            <button>Ir atrás do Atlas</button>
+                        </a>
+                        <a href="#page-1.2_2">
+                            <button>Deixa-lo ir e procurar energia</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="lab">
+                    <label for="darkmode" class="darkmodelabel">Dark Mode</label>
+                </div>
+            </div>
+        </section>
+        <section id="page-1.1.1">
+            <div class='caixa'>
+                <div class="caixa-img">
+                    <img id="tamanho-img2" src="img/corredor.jpg">
+                </div>
+                <div class="paragrafo">
+                    <p>“Atlas! Volte aqui amiguinho.” Tron grita indo em direção a Atlas. Atlas para em frente a uma
+                        grande porta e começa a arranhá-la, como se estivesse pedindo para abri-la. “O que tem aí atrás
+                        amiguinho?” Tron tenta ver o que tem atras da porta, mas nem seus sensores de alta tecnologia
+                        conseguem ver. Ele observa um painel na parede ao lado da porta. - Insira a Senha - “Faz ideia
+                        de qual seria a senha amiguinho? Eu poderia descriptografar, mas vai consumir ainda mais minha
+                        bateria. O que devo fazer?” </p>
+                    <div class="caixa-buttons">
+                        <a href="#page-1.1.1.1">
+                            <button>Descriptografar</button>
+                        </a>
+                        <a href="#page-1.2_3">
+                            <button>Desistir</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="lab">
+                    <label for="darkmode" class="darkmodelabel">Dark Mode</label>
+                </div>
+            </div>
+        </section>
+        <section id="page-1.1.1.1">
+            <div class='container'>
+                <div class="imagem">
+                    <img id="tamanho-img" src="img/tela.jpg">
+                </div>
+                <div class="texto">
+                    <p id="txt-menor" class="separar">Tron decide descriptografar a senha, um alerta do seu sistema
+                        repete ‘sem
+                        bateria’. Após alguns
+                        minutos aparece a senha correta na tela, ATLAS. Tron ri olhando para seu novo amiguinho, “você
+                        poderia ter me contado, teria me poupado energia e tempo, não acha?” Atlas o olha com olhos
+                        curiosos. “Vamos ver o que tem lá dentro?” Tron abre devagar a porta metálica enorme, e entra
+                        fazendo o reconhecimento do local. Ele vê mais ao fundo da sala uma escada. Ele segue em direção
+                        a ela e desce com seu fiel amigo ao seu lado. Ao descer se depara com uma realidade bem
+                        diferente do local acima de sua cabeça. É um lugar bem amplo com tecnologia de primeira. Os
+                        equipamentos não sofreram nenhum arranhão. Ele vai até o computador principal e faz o backup dos
+                        dados. Um vídeo começa a ser reproduzido na tela. </br>
+                        “Olá, para a posteridade eu sou Wilfred Kapany, sou cientista, médico e programador, ou era. Eu
+                        passei anos da minha vida criando este lugar junto com um programa de sobrevivência para a
+                        humanidade. O apocalipse era inevitável, mas a extinção não. Então desenvolvi esse projeto.
+                        Dentro deste buncker há todo tipo de coisas essenciais para a vida humana. Se você está vendo
+                        este vídeo te incumbo a responsabilidade de colocar em prática meu projeto. Tem instruções para
+                        todo o processo. Eu irei auxiliá-lo. Seja bem-vindo ao projeto PASVH.” </br>
+                        Tron olha para Atlas que está deitado confortavelmente. “Acho que vamos restaurar a humanidade
+                        amiguinho.” </p>
+                    <div class="caixa-buttons">
+                        <a href="#final">
+                            <button id="btn-menor">Sair do jogo</button>
+                        </a>
+                        <a href="#comeco">
+                            <button id="btn-menor">Voltar ao início</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="lab">
+                    <label for="darkmode" class="darkmodelabel">Dark Mode</label>
+                </div>
+            </div>
+        </section>
+        <section id="page-1.2">
+            <div class='container'>
+                <div class="imagem">
+                    <img id="tamanho-img" src="img/destruido.jpg">
+                </div>
+                <div id="separar" class="texto">
+                    <p>Tron ignora o barulho e segue para a saída do galpão. Ao abrir aquelas portas pesadas e enormes,
+                        causa um barulho ensurdecedor por causa das dobradiças enferrujadas. Ele caminha rumo a rua,
+                        olhando em volta ele observa a destruição. Casas pela metade, destroços espalhados, resto do que
+                        um dia foram robôs, não havia restado nada. Tron se pergunta o que teria acontecido a aquele
+                        lugar. Seu armazenamento interno lhe mostra gravações de como era a vida humana antes da
+                        destruição. Ele continua andando pelo que antigamente era uma rua linda, movimentada, com
+                        crianças brincando por toda parte. Um alerta do seu sistema repete ‘sem bateria’. Ele levanta os
+                        olhos e vê a distância, uma torre, mas também observa um pouco mais perto que uma casa está com
+                        a lâmpada ligada. O que Tron deve fazer?</p>
+                    <div class="caixa-buttons">
+                        <a href="#page-1.2.1">
+                            <button>Ir até a torre</button>
+                        </a>
+                        <a href="#page-1.2.2">
+                            <button>Ir até a casa</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="lab">
+                    <label for="darkmode" class="darkmodelabel">Dark Mode</label>
+                </div>
+            </div>
+        </section>
+        <section id="page-1.2_2">
+            <div class='caixa'>
+                <div class="caixa-img">
+                    <img id="tamanho-img3" src="img/destrocos.jpeg">
+                </div>
+                <div class="paragrafo">
+                    <p>Tron decide por não seguir Atlas, ele segue para a saída do galpão. Ao abrir aquelas portas
+                        pesadas e enormes, causa um barulho ensurdecedor por causa das dobradiças enferrujadas. Ele
+                        caminha rumo a rua, olhando em volta ele observa a destruição. Casas pela metade, destroços
+                        espalhados, resto do que um dia foram robôs, não havia restado nada. Tron se pergunta o que
+                        teria acontecido a aquele lugar. Seu armazenamento interno lhe mostra gravações de como era a
+                        vida humana antes da destruição. Ele continua andando pelo que antigamente era uma rua linda,
+                        movimentada, com crianças brincando por toda parte. Um alerta do seu sistema repete ‘sem
+                        bateria’. Ele levanta os olhos e vê a distância, uma torre, mas também observa um pouco mais
+                        perto que uma casa está com a lâmpada ligada. O que Tron deve fazer?</p>
+                    <div class="caixa-buttons">
+                        <a href="#page-1.2.1">
+                            <button>Ir até a torre</button>
+                        </a>
+                        <a href="#page-1.2.2">
+                            <button>Ir até a casa</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="lab">
+                    <label for="darkmode" class="darkmodelabel">Dark Mode</label>
+                </div>
+            </div>
+        </section>
+        <section id="page-1.2_3">
+            <div class='container'>
+                <div class="imagem">
+                    <img id="tamanho-img" src="img/destruido.jpg">
+                </div>
+                <div id="separar" class="texto">
+                    <p>Tron decide por não descriptografar. “Amiguinho, vou ter que ir procurar uma fonte de energia.
+                        Quer ir comigo?” Atlas pelo visto não quer o acompanhar pois ele sai correndo. “Acho que isso é
+                        um não.” Tron ri e segue para a saída do galpão. Ao abrir aquelas portas pesadas e enormes,
+                        causa um barulho ensurdecedor por causa das dobradiças enferrujadas. Ele caminha rumo a rua,
+                        olhando em volta ele observa a destruição. Casas pela metade, destroços espalhados, resto do que
+                        um dia foram robôs, não havia restado nada. Tron se pergunta o que teria acontecido a aquele
+                        lugar. Seu armazenamento interno lhe mostra gravações de como era a vida humana antes da
+                        destruição. Ele continua andando pelo que antigamente era uma rua linda, movimentada, com
+                        crianças brincando por toda parte. Um alerta do seu sistema repete ‘sem bateria’. Ele levanta os
+                        olhos e vê a distância, uma torre, mas também observa um pouco mais perto que uma casa está com
+                        a lâmpada ligada. O que Tron deve fazer? </p>
+                    <div class="caixa-buttons">
+                        <a href="#page-1.2.1">
+                            <button>Ir até a torre</button>
+                        </a>
+                        <a href="#page-1.2.2">
+                            <button>Ir até a casa</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="lab">
+                    <label for="darkmode" class="darkmodelabel">Dark Mode</label>
+                </div>
+            </div>
+        </section>
+        <section id="page-1.2.1">
+            <div class='caixa'>
+                <div class="caixa-img">
+                    <img id="tamanho-img3" src="img/torre.jpg">
+                </div>
+                <div class="paragrafo">
+                    <p id="txt-menor">Tron segue para a torre. Depois de uns 20 minutos caminhando ele encontra a enorme
+                        torre. Ele
+                        acha a fonte de energia na base. Então se conecta para recarregar. Com sua carga completa Tron
+                        se vê sem objetivo. </br> Tron, olha em volta e se depara com um mapa. Ele não estava em bom
+                        estado, algumas partes estavam rasgadas e o papel estava bem sujo. Uma palavra chamou sua
+                        atenção, esteva circulada. “Belchite”.</br>Tron decide ir até lá. Pelos seus cálculos chegaria
+                        lá em 14 horas. Começou a caminhar em direção a Belchite. Tron enfim chega ao local, parecia
+                        deserto. Essa cidade não era muito diferente da outra em que estava. “Fique parado.” Uma voz
+                        grossa gritou para Tron. “O que faz aqui?” Tron então se vira devagar. “Na verdade, não sei.
+                        Acordei sozinho na cidade vizinha. A cidade na qual eu estava não possuía nenhum habitante.” O
+                        homem o encara ferozmente e por fim abaixa a arma. “Você possui armas ou algo que possa ferir
+                        pessoas?” “Não. Não possuo sistema de armas nem pretendo ferir ninguém.” “Tudo bem, você pode
+                        vir comigo, será bem útil. Eu me chamo Tales, você tem nome?” “Prazer em conhecê-lo Tales, me
+                        chamo Tron.” “Bem-vindo Tron, você está em Belchite a cidade dos sobreviventes.” Após caminharem
+                        um pouco, Tron se depara com uma cidade em reforma, com muitas pessoas que sobreviveram, também
+                        havia outros robôs. Tron encontrara um lar.</p>
+                    <div class="caixa-buttons">
+                        <a href="#comeco">
+                            <button id="btn-menor">Voltar ao início</button>
+                        </a>
+                        <a href="#final">
+                            <button id="btn-menor">Finalizar o jogo</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="lab">
+                    <label for="darkmode" class="darkmodelabel">Dark Mode</label>
+                </div>
+            </div>
+        </section>
+        <section id="page-1.2.2">
+            <div class='caixa'>
+                <div class="caixa-img">
+                    <img id="tamanho-img" src="img/casa.jpg">
+                </div>
+                <div class="paragrafo">
+                    <p>Tron caminha em direção a casa. Ela é grande, tem um grande quintal, possui muitas janelas, mas a
+                        maior parte está quebrada. A luz acesa está localizada no segundo andar da casa. Ele faz um
+                        reconhecimento procurando a fonte de energia, a encontra no fundo da casa. Ele caminha em
+                        direção a ela. “Parado bem aí. O que você quer?” diz uma voz grossa e arrepiante. Tron olha em
+                        direção a voz devagar. “Olá, me chamo Tron. Preciso recarregar minha bateria, sei que tem uma
+                        fonte de energia no fundo da casa.” Um homem alto, bem forte, com o que parece ser uma capa
+                        improvisada e uma arma na mão apontada para Tron, aparece no meio fio da porta. “Tudo bem, pode
+                        recarregar. Me siga.”</p>
+                    <div class="caixa-buttons">
+                        <a href="#page-1.2.2.1">
+                            <button>Seguir o Homem</button>
+                        </a>
+                        <a href="#page-1.2.2.2">
+                            <button>Voltar e ir em direção a Torre</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="lab">
+                    <label for="darkmode" class="darkmodelabel">Dark Mode</label>
+                </div>
+            </div>
+        </section>
+        <section id="page-1.2.2.1">
+            <div class='container'>
+                <div class="imagem">
+                    <img id="tamanho-img" src="img/pessoa.jpg">
+                </div>
+                <div id="separar" class="texto">
+                    <p>Tron segue o Homem até o fundo da casa. “Aqui, pode recarregar.” Diz o homem apontando para a
+                        caixa de energia. “Obrigado.” Tron fica de costas para o homem e se conecta para recarregar. O
+                        Homem se afasta um pouco e começa a atirar em Tron. Ele tenta se defender, mas uma das balas
+                        acerta sua CPU. Tron então é desativado.</p>
+                    <div class="caixa-buttons">
+                        <a href="#final">
+                            <button>Desistir do jogo</button>
+                        </a>
+                        <a href="#page-1.2">
+                            <button>Mudar a escolha</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="lab">
+                    <label for="darkmode" class="darkmodelabel">Dark Mode</label>
+                </div>
+            </div>
+        </section>
+        <section id="page-1.2.2.2">
+            <div class='container'>
+                <div class="imagem">
+                    <img id="tamanho-img" src="img/torre.jpg">
+                </div>
+                <div id="separar" class="texto">
+                    <p id="txt-menor">Tron decide voltar e ir em direção a Torre. Depois de uns 20 minutos caminhando
+                        ele encontra a enorme torre. Ele acha a fonte de energia na base. Então se conecta para
+                        recarregar. Com sua carga completa Tron se vê sem objetivo. </br>
+
+                        Tron, olha em volta e se depara com um mapa. Ele não estava em bom estado, algumas partes
+                        estavam rasgadas e o papel estava bem sujo. Uma palavra chamou sua atenção, esteva circulada.
+                        “Belchite”. Tron decide ir até lá. Pelos seus cálculos chegaria lá em 14 horas. Começou a
+                        caminhar em direção a Belchite.</br>
+
+                        Tron enfim chega ao local, parecia deserto. Essa cidade não era muito diferente da outra em que
+                        estava. “Fique parado.” Uma voz grossa gritou para Tron. “O que faz aqui?” Tron então se vira
+                        devagar. “Na verdade, não sei. Acordei sozinho na cidade vizinha. A cidade na qual eu estava não
+                        possuía nenhum habitante.” O homem o encara ferozmente e por fim abaixa a arma. “Você possui
+                        armas ou algo que possa ferir pessoas?” “Não. Não possuo sistema de armas nem pretendo ferir
+                        ninguém.” “Tudo bem, você pode vir comigo, será bem útil. Eu me chamo Tales, você tem nome?”
+                        “Prazer em conhecê-lo Tales, me chamo Tron.” “Bem-vindo Tron, você está em Belchite a cidade dos
+                        sobreviventes.” Após caminharem um pouco, Tron se depara com uma cidade em reforma, com muitas
+                        pessoas que sobreviveram, também havia outros robôs. Tron encontrara um lar. </p>
+                    <div class="caixa-buttons">
+                        <a href="#comeco">
+                            <button id="btn-menor">Voltar ao início</button>
+                        </a>
+                        <a href="#final">
+                            <button id="btn-menor">Finalizar o jogo</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="lab">
+                    <label for="darkmode" class="darkmodelabel">Dark Mode</label>
+                </div>
+            </div>
+        </section>
+        <section id="page-2">
+            <div class='caixa'>
+                <div class="caixa-img">
+                    <img id="tamanho-img" src="img/robo.jpg">
+                </div>
+                <div class="paragrafo">
+                    <p>Havel acorda e olha em volta, fazendo um reconhecimento do local em que está. Ao acabar sua
+                        checagem observa que está com pouca bateria uma de suas pernas está presa em um escombro. Sua
+                        memória fora comprometida, ele não se lembra o que aconteceu antes de acordar naquele lugar.
+                        Havel move o escombro percebe que sua perna está danificada. Nisso ele houve passos, um outro
+                        I.A se aproxima. Ele analisa o Havel. “Sua perna está danificada, venha comigo, sei onde podemos
+                        concertá-la.”</p>
+                    <div class="caixa-buttons">
+                        <a href="#page-2.1">
+                            <button>Ir com o robô</button>
+                        </a>
+                        <a href="#page-2.2">
+                            <button>Recusar a oferta</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="lab">
+                    <label for="darkmode" class="darkmodelabel">Dark Mode</label>
+                </div>
+            </div>
+        </section>
+        <section id="page-2.1">
+            <div class='container'>
+                <div class="imagem">
+                    <img id="tamanho-img" src="img/aleatorio.jpg">
+                </div>
+                <div id="separar" class="texto">
+                    <p id="txt-menor">“Que lugar é esse?” pergunta Havel seguindo o robô misterioso. “A propósito sou
+                        Havel, como se
+                        chama?” O robô lhe olha, ponderando se deve responder as perguntas, por fim se dá por vencido.
+                        “Me chamo Argos. Não sei onde estamos. Estou preso aqui a bastante tempo.” Havel continua seu
+                        questionamento. “Tem mais como nós aqui? Não tem uma saída?” “Se tiver eu ainda não achei. Toda
+                        semana chega robôs novos, mas eles não duram muito tempo. Você é o primeiro I.A a chegar depois
+                        de mim.” “Como assim não duram muito tempo?” “Você vai ver antes do que imagina. Chegamos.”
+                        </br> Argos abre a porta de um galpão, está bem destruído, destroços espalhados por todo o
+                        lugar. De repente eles escutam barulhos de tiros. Havel se assusta. “Se acostume, isso acontece
+                        muito aqui. Devem ter encontrado algum robô desprotegido. Venha, vamos concertar sua perna.”
+                        Havel segue Argos até o fundo do galpão, eles descem uma escada que dá acesso ao porão. O porão
+                        é bem mais agradável do que a parte superior do galpão. Tem uma mesa com algumas ferramentas e
+                        peças de robôs. Havel começa a desmontar e concertar sua perna. “Como achou esse lugar e todas
+                        essas coisas?” “Estou aqui já faz um tempo. Os robôs que são desativados geralmente têm muitas
+                        peças que são muito uteis. Eu mesmo já precisei várias vezes concertar algo. Uma vez um tiro
+                        acertou a milímetros da minha CPU, por sorte consegui escapar. Eu precisava de um lugar para
+                        ficar escondido, então achei este aqui. Está servindo bem por enquanto.” Havel termina de
+                        consertar sua perna. “Certo e o que faremos para sair daqui?” “Pelo tempo que estou aqui só pude
+                        pensar em uma maneira, mas nunca me atrevi a tentar. Drones passeiam por cima de nós todos os
+                        dias, eles com certeza têm uma base de onde saem e para onde voltam. Se conseguirmos segui-los,
+                        talvez saiamos saqui sem ser desativados.” Havel tenta decidir o que fazer.</p>
+                    <div class="caixa-buttons">
+                        <a href="#page-2.1.1">
+                            <button id="btn-menor">Seguir o plano de Argos</button>
+                        </a>
+                        <a href="#page-2.1.2">
+                            <button id="btn-menor">Pensar em um novo plano</button>
+                        </a>
+                        <!-- <button id="botao" onclick="mudar()">Mudar</button> -->
+                    </div>
+                </div>
+                <div class="lab">
+                    <label for="darkmode" class="darkmodelabel">Dark Mode</label>
+                </div>
+            </div>
+        </section>
+        <section id="page-2.1.1">
+            <div class='caixa'>
+                <div class="caixa-img">
+                    <img id="tamanho-img" src="img/drone2.jpg">
+                </div>
+                <div class="paragrafo">
+                    <p>“Tudo bem, vamos fazer isso. Que horas os drones passam por essa região?” “Já está quase na hora.
+                        Precisamos nos recarregar antes.” Argos leva Havel até uma fonte de energia e os dois se
+                        recarregam. A hora de pôr o plano em prática chega. Eles sobem para a superfície, ficam de
+                        tocaia em um local estratégico onde não poderiam ser vistos. O drone sobrevoa Havel e Argos e
+                        continua indo em direção norte. Eles começam a seguir o drone, tomando cuidado para passarem
+                        despercebidos. Depois de quase 30 minutos eles chegam ao que parece ser a saída. O drone entra
+                        por uma janela que se abre quando ele se aproxima. Eles estão de frente para um muro enorme, há
+                        somente uma porta visível. Não há nada a vista, nenhum drone, nenhum robô. “O que fazemos agora
+                        Havel?” </p>
+                    <div class="caixa-buttons">
+                        <a href="#page-2.1.1.1">
+                            <button>Observar por algumas horas o local</button>
+                        </a>
+                        <a href="#page-2.1.1.2">
+                            <button>Avançar e tentar passar pela porta</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="lab">
+                    <label for="darkmode" class="darkmodelabel">Dark Mode</label>
+                </div>
+            </div>
+        </section>
+        <section id="page-2.1.1.1">
+            <div class='container'>
+                <div class="imagem">
+                    <img id="tamanho-img" src="img/caminhao.jpg">
+                </div>
+                <div id="separar" class="texto">
+                    <p>“Vamos observar o local por algumas horas, é muito perigoso avançar agora sem saber o que
+                        esperar.” Após 2 horas eles observam um caminhão se aproximando. Eles fazem um reconhecimento.
+                        Observam um robô como motorista e mais dois na parte de trás. Na caçamba há restos de robôs que
+                        foram destruídos. O caminhão segue em direção a porta no muro. Eles observam o caminhão passar
+                        por uma inspeção e ser liberado para entrar.</br>“Acho que não dá pra entrar sem a aprovação
+                        deles. ” “Podemos esperar até amanhã e tomar o lugar dos robôs no caminhão. Ou enquanto eles
+                        recolhem os robôs que já forma desativados nós entramos na caçamba e fingimos que estamos
+                        desligados. O que vamos fazer Havel?” </p>
+                    <div class="caixa-buttons">
+                        <a href="#page-2.1.1.1.1">
+                            <button>Pegar o lugar dos robôs</button>
+                        </a>
+                        <a href="#page-2.1.1.1.2">
+                            <button>Entrar na caçamba</button>
+                        </a>
+                        <!-- <button id="botao" onclick="mudar()">Mudar</button> -->
+                    </div>
+                </div>
+                <div class="lab">
+                    <label for="darkmode" class="darkmodelabel">Dark Mode</label>
+                </div>
+            </div>
+        </section>
+        <section id="page-2.1.1.1.1">
+            <div class='caixa'>
+                <div class="caixa-img">
+                    <img id="tamanho-img" src="img/tiro.jpg">
+                </div>
+                <div class="paragrafo">
+                    <p>“Vamos pegar o lugar dos robôs. Esperamos até amanhã e quando eles estiverem procurando por robô
+                        desativados tomamos o lugar deles no caminhão. Depois passamos pela porta.” “Precisamos ficar
+                        escondidos até lá.”</br>
+                        Havel e Argos esperaram, quando o caminhão passou pela porta eles o seguiram e enquanto os robôs
+                        faziam seu trabalho, eles chegaram por trás, acertaram com uma barra de ferro o sensor dos
+                        robôs, depois acertaram a CPU, colocaram eles na caçamba e tomaram seus postos. Voltaram então
+                        em direção ao muro. Ao chegarem na porta o sensor não os identificou, imediatamente saíram robôs
+                        armados pelas portas e começaram a atirar neles. Havel é atingido na CPU e é desativado. </p>
+                    <div class="caixa-buttons">
+                        <a href="#comeco">
+                            <button>Voltar ao início</button>
+                        </a>
+                        <a href="#page-2">
+                            <button>Mudar a escolha</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="lab">
+                    <label for="darkmode" class="darkmodelabel">Dark Mode</label>
+                </div>
+            </div>
+        </section>
+        <section id="page-2.1.1.1.2">
+            <div class='caixa'>
+                <div class="caixa-img">
+                    <img id="tamanho-img" src="img/computador.jpg">
+                </div>
+                <div class="paragrafo">
+                    <p id="txt-menor">“Vamos entrar na caçamba. Esperamos até amanhã e quando eles estiverem procurando
+                        por robô
+                        desativados entraremos na caçamba e fingiremos que estamos desativados. Depois passamos pela
+                        porta.” “Precisamos ficar escondidos até lá.”</br>
+                        Havel e Argos esperaram, quando o caminhão passou pela porta eles o seguiram e enquanto os robôs
+                        faziam seu trabalho, eles entraram na caçamba. Os robôs jogaram alguns robôs destruídos dentro
+                        da caçamba, acabaram o trabalho e voltaram para a porta no muro. Passaram pela porta sem serem
+                        notados. A parte de dentro, diferente do lado de fora, é organizado a não está destruído. Os
+                        robôs que estavam no caminhão somem no corredor a direita. Havel e Argos saem de dentro da
+                        caçamba e caminham pelo corredor a esquerda. “Que lugar é esse?” Pergunta Havel retoricamente.
+                        Eles seguem pelo corredor, ao ouvir passos de outros robôs eles entram na primeira sala que eles
+                        veem. A sala está repleta de computadores. Eles caminham até eles e olham seus arquivos. O
+                        arquivo ‘Survive’ chama atenção. Eles se deparam com várias, fotos, gravações, arquivos de
+                        relatório sobre todos os robôs que já haviam passado pela cidade. De repente um vídeo aparece na
+                        tela do computador. Uma mulher começa a falar.</br>
+                        “Parabéns. Estou impressionada com o quão rápido conseguiram passar pela primeira porta. Estamos
+                        testando a capacidade de vocês. Os próximos testes com certeza serão bem mais difíceis e
+                        desafiadores. Bem-vindos ao Survive. Sobrevivam!” </p>
+                    <div class="caixa-buttons">
+                        <a href="#final">
+                            <button id="btn-menor">Sair do Jogo</button>
+                        </a>
+                        <a href="#comeco">
+                            <button id="btn-menor">Voltar ao início</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="lab">
+                    <label for="darkmode" class="darkmodelabel">Dark Mode</label>
+                </div>
+            </div>
+        </section>
+        <section id="page-2.1.1.2">
+            <div class='container'>
+                <div class="imagem">
+                    <img id="tamanho-img" src="img/camera.jpg">
+                </div>
+                <div id="separar" class="texto">
+                    <p>“Acho que devemos avançar e tentar passar pela porta.” “É bem arriscado, e se tiver alguma
+                        armadilha?” “Vamos descobrir.”</br>
+                        Eles avançam do lugar em que estavam escondidos em direção a porta ligada ao muro. Ainda não tem
+                        nada a vista. Quando chegam a 3 metros da porta Argos avisa a Havel que a uma câmera apontada na
+                        direção deles. Antes que Argos possa dizer para eles darem meia volta e correrem, robôs armados
+                        saem pela porta e começam a atirar na direção deles. Havel é atingido na CPU e é desativado.
+                    </p>
+                    <div class="caixa-buttons">
+                        <a href="#comeco">
+                            <button>Voltar ao início</button>
+                        </a>
+                        <a href="#page-2">
+                            <button>Mudar a escolha</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="lab">
+                    <label for="darkmode" class="darkmodelabel">Dark Mode</label>
+                </div>
+            </div>
+        </section>
+        <section id="page-2.2">
+            <div class='caixa'>
+                <div class="caixa-img">
+                    <img id="tamanho-img" src="img/sobreviver.jpg">
+                </div>
+                <div class="paragrafo">
+                    <p> “Decisão errada. Você não tem muito tempo, seja esperto e tome cuidado. Com a perna danificada,
+                        suas chances são menores ainda.” O robô sai pelo mesmo lugar que tinha entrado. Havel ouve um
+                        barulho. Seus sensores não capitam nada. Quando ele menos espera tiros são disparados contra
+                        ele. Havel tenta localizar o atirador, mas antes que pudesse fazer alguma coisa, um tiro acerta
+                        sua CPU. Havel é desativado.</p>
+                    <div class="caixa-buttons">
+                        <a href="#comeco">
+                            <button>Voltar ao início</button>
+                        </a>
+                        <a href="#page-2">
+                            <button>Mudar a escolha</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="lab">
+                    <label for="darkmode" class="darkmodelabel">Dark Mode</label>
+                </div>
+            </div>
+        </section>
+        <section id="page-2.1.2">
+            <div class='caixa'>
+                <div class="caixa-img">
+                    <img id="tamanho-img" src="img/plano.jpg">
+                </div>
+                <div class="paragrafo">
+                    <p>“Não consegui pensar em nenhum novo plano.” “Nem eu.” “Nossa melhor opção é seguir o seu plano.
+                        Vamos colocá-lo em prática.”</p>
+                    <div class="caixa-buttons">
+                        <a href="#page-2.1.1">
+                            <button>Seguir o plano do Argos</button>
+                        </a>
+                        <a href="#comeco">
+                            <button>Voltar ao início</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="lab">
+                    <label for="darkmode" class="darkmodelabel">Dark Mode</label>
+                </div>
+            </div>
+        </section>
+        <section id="final">
+            <div class="final">
+                <div class="txt-final">
+                    <h1>Fim de jogo!</h1>
+                </div>
+                <div class="lab">
+                    <label for="darkmode" class="darkmodelabel">Dark Mode</label>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
